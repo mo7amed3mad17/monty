@@ -1,1 +1,0 @@
-/usr/bin/cc -fPIC -shared -Wl,-soname,libpolyfill.so -o libpolyfill.so CMakeFiles/polyfill.dir/polyfill.c.o 
