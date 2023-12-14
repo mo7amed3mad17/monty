@@ -1,0 +1,1 @@
+/usr/bin/cc -fPIC -shared -Wl,-soname,libstderred.so -o libstderred.so CMakeFiles/stderred.dir/stderred.c.o  -ldl 

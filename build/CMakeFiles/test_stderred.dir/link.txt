@@ -1,0 +1,1 @@
+/usr/bin/cc -fPIC -shared -Wl,-soname,libtest_stderred.so -o libtest_stderred.so CMakeFiles/test_stderred.dir/mocks.c.o CMakeFiles/test_stderred.dir/stderred.c.o  -ldl 

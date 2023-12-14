@@ -1,0 +1,128 @@
+Determining if the function fprintf_unlocked exists failed with the following output:
+Change Dir: /home/mohamed7/monty/stderred/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_84dbd/fast && gmake[1]: Entering directory '/home/mohamed7/monty/stderred/build/CMakeFiles/CMakeTmp'
+/usr/bin/gmake  -f CMakeFiles/cmTC_84dbd.dir/build.make CMakeFiles/cmTC_84dbd.dir/build
+gmake[2]: Entering directory '/home/mohamed7/monty/stderred/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_84dbd.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=fprintf_unlocked  -D_GNU_SOURCE -o CMakeFiles/cmTC_84dbd.dir/CheckFunctionExists.c.o -c /usr/share/cmake-3.22/Modules/CheckFunctionExists.c
+<command-line>: warning: conflicting types for built-in function ‘fprintf_unlocked’; expected ‘int(void *, const char *, ...)’ [-Wbuiltin-declaration-mismatch]
+<command-line>: note: in definition of macro ‘CHECK_FUNCTION_EXISTS’
+Linking C executable cmTC_84dbd
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_84dbd.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=fprintf_unlocked  -D_GNU_SOURCE -rdynamic CMakeFiles/cmTC_84dbd.dir/CheckFunctionExists.c.o -o cmTC_84dbd 
+/usr/bin/ld: CMakeFiles/cmTC_84dbd.dir/CheckFunctionExists.c.o: in function `main':
+CheckFunctionExists.c:(.text+0x14): undefined reference to `fprintf_unlocked'
+collect2: error: ld returned 1 exit status
+gmake[2]: *** [CMakeFiles/cmTC_84dbd.dir/build.make:99: cmTC_84dbd] Error 1
+gmake[2]: Leaving directory '/home/mohamed7/monty/stderred/build/CMakeFiles/CMakeTmp'
+gmake[1]: *** [Makefile:127: cmTC_84dbd/fast] Error 2
+gmake[1]: Leaving directory '/home/mohamed7/monty/stderred/build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the function errc exists failed with the following output:
+Change Dir: /home/mohamed7/monty/stderred/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_ad404/fast && gmake[1]: Entering directory '/home/mohamed7/monty/stderred/build/CMakeFiles/CMakeTmp'
+/usr/bin/gmake  -f CMakeFiles/cmTC_ad404.dir/build.make CMakeFiles/cmTC_ad404.dir/build
+gmake[2]: Entering directory '/home/mohamed7/monty/stderred/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_ad404.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=errc  -D_GNU_SOURCE -o CMakeFiles/cmTC_ad404.dir/CheckFunctionExists.c.o -c /usr/share/cmake-3.22/Modules/CheckFunctionExists.c
+Linking C executable cmTC_ad404
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ad404.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=errc  -D_GNU_SOURCE -rdynamic CMakeFiles/cmTC_ad404.dir/CheckFunctionExists.c.o -o cmTC_ad404 
+/usr/bin/ld: CMakeFiles/cmTC_ad404.dir/CheckFunctionExists.c.o: in function `main':
+CheckFunctionExists.c:(.text+0x14): undefined reference to `errc'
+collect2: error: ld returned 1 exit status
+gmake[2]: *** [CMakeFiles/cmTC_ad404.dir/build.make:99: cmTC_ad404] Error 1
+gmake[2]: Leaving directory '/home/mohamed7/monty/stderred/build/CMakeFiles/CMakeTmp'
+gmake[1]: *** [Makefile:127: cmTC_ad404/fast] Error 2
+gmake[1]: Leaving directory '/home/mohamed7/monty/stderred/build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the function verrc exists failed with the following output:
+Change Dir: /home/mohamed7/monty/stderred/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_e7dc5/fast && gmake[1]: Entering directory '/home/mohamed7/monty/stderred/build/CMakeFiles/CMakeTmp'
+/usr/bin/gmake  -f CMakeFiles/cmTC_e7dc5.dir/build.make CMakeFiles/cmTC_e7dc5.dir/build
+gmake[2]: Entering directory '/home/mohamed7/monty/stderred/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_e7dc5.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=verrc  -D_GNU_SOURCE -o CMakeFiles/cmTC_e7dc5.dir/CheckFunctionExists.c.o -c /usr/share/cmake-3.22/Modules/CheckFunctionExists.c
+Linking C executable cmTC_e7dc5
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e7dc5.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=verrc  -D_GNU_SOURCE -rdynamic CMakeFiles/cmTC_e7dc5.dir/CheckFunctionExists.c.o -o cmTC_e7dc5 
+/usr/bin/ld: CMakeFiles/cmTC_e7dc5.dir/CheckFunctionExists.c.o: in function `main':
+CheckFunctionExists.c:(.text+0x14): undefined reference to `verrc'
+collect2: error: ld returned 1 exit status
+gmake[2]: *** [CMakeFiles/cmTC_e7dc5.dir/build.make:99: cmTC_e7dc5] Error 1
+gmake[2]: Leaving directory '/home/mohamed7/monty/stderred/build/CMakeFiles/CMakeTmp'
+gmake[1]: *** [Makefile:127: cmTC_e7dc5/fast] Error 2
+gmake[1]: Leaving directory '/home/mohamed7/monty/stderred/build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the function warnc exists failed with the following output:
+Change Dir: /home/mohamed7/monty/stderred/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_5d592/fast && gmake[1]: Entering directory '/home/mohamed7/monty/stderred/build/CMakeFiles/CMakeTmp'
+/usr/bin/gmake  -f CMakeFiles/cmTC_5d592.dir/build.make CMakeFiles/cmTC_5d592.dir/build
+gmake[2]: Entering directory '/home/mohamed7/monty/stderred/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_5d592.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=warnc  -D_GNU_SOURCE -o CMakeFiles/cmTC_5d592.dir/CheckFunctionExists.c.o -c /usr/share/cmake-3.22/Modules/CheckFunctionExists.c
+Linking C executable cmTC_5d592
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5d592.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=warnc  -D_GNU_SOURCE -rdynamic CMakeFiles/cmTC_5d592.dir/CheckFunctionExists.c.o -o cmTC_5d592 
+/usr/bin/ld: CMakeFiles/cmTC_5d592.dir/CheckFunctionExists.c.o: in function `main':
+CheckFunctionExists.c:(.text+0x14): undefined reference to `warnc'
+collect2: error: ld returned 1 exit status
+gmake[2]: *** [CMakeFiles/cmTC_5d592.dir/build.make:99: cmTC_5d592] Error 1
+gmake[2]: Leaving directory '/home/mohamed7/monty/stderred/build/CMakeFiles/CMakeTmp'
+gmake[1]: *** [Makefile:127: cmTC_5d592/fast] Error 2
+gmake[1]: Leaving directory '/home/mohamed7/monty/stderred/build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the function vwarnc exists failed with the following output:
+Change Dir: /home/mohamed7/monty/stderred/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_b7dc5/fast && gmake[1]: Entering directory '/home/mohamed7/monty/stderred/build/CMakeFiles/CMakeTmp'
+/usr/bin/gmake  -f CMakeFiles/cmTC_b7dc5.dir/build.make CMakeFiles/cmTC_b7dc5.dir/build
+gmake[2]: Entering directory '/home/mohamed7/monty/stderred/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_b7dc5.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=vwarnc  -D_GNU_SOURCE -o CMakeFiles/cmTC_b7dc5.dir/CheckFunctionExists.c.o -c /usr/share/cmake-3.22/Modules/CheckFunctionExists.c
+Linking C executable cmTC_b7dc5
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b7dc5.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=vwarnc  -D_GNU_SOURCE -rdynamic CMakeFiles/cmTC_b7dc5.dir/CheckFunctionExists.c.o -o cmTC_b7dc5 
+/usr/bin/ld: CMakeFiles/cmTC_b7dc5.dir/CheckFunctionExists.c.o: in function `main':
+CheckFunctionExists.c:(.text+0x14): undefined reference to `vwarnc'
+collect2: error: ld returned 1 exit status
+gmake[2]: *** [CMakeFiles/cmTC_b7dc5.dir/build.make:99: cmTC_b7dc5] Error 1
+gmake[2]: Leaving directory '/home/mohamed7/monty/stderred/build/CMakeFiles/CMakeTmp'
+gmake[1]: *** [Makefile:127: cmTC_b7dc5/fast] Error 2
+gmake[1]: Leaving directory '/home/mohamed7/monty/stderred/build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the function err_set_file exists failed with the following output:
+Change Dir: /home/mohamed7/monty/stderred/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_9dd2f/fast && gmake[1]: Entering directory '/home/mohamed7/monty/stderred/build/CMakeFiles/CMakeTmp'
+/usr/bin/gmake  -f CMakeFiles/cmTC_9dd2f.dir/build.make CMakeFiles/cmTC_9dd2f.dir/build
+gmake[2]: Entering directory '/home/mohamed7/monty/stderred/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_9dd2f.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=err_set_file  -D_GNU_SOURCE -o CMakeFiles/cmTC_9dd2f.dir/CheckFunctionExists.c.o -c /usr/share/cmake-3.22/Modules/CheckFunctionExists.c
+Linking C executable cmTC_9dd2f
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9dd2f.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=err_set_file  -D_GNU_SOURCE -rdynamic CMakeFiles/cmTC_9dd2f.dir/CheckFunctionExists.c.o -o cmTC_9dd2f 
+/usr/bin/ld: CMakeFiles/cmTC_9dd2f.dir/CheckFunctionExists.c.o: in function `main':
+CheckFunctionExists.c:(.text+0x14): undefined reference to `err_set_file'
+collect2: error: ld returned 1 exit status
+gmake[2]: *** [CMakeFiles/cmTC_9dd2f.dir/build.make:99: cmTC_9dd2f] Error 1
+gmake[2]: Leaving directory '/home/mohamed7/monty/stderred/build/CMakeFiles/CMakeTmp'
+gmake[1]: *** [Makefile:127: cmTC_9dd2f/fast] Error 2
+gmake[1]: Leaving directory '/home/mohamed7/monty/stderred/build/CMakeFiles/CMakeTmp'
+
+
+
