@@ -12,16 +12,17 @@ int execute(stack_t **stack, char **parsed, unsigned int line_c, FILE *file)
 	int i = 0;
 
 	instruction_t ops[] = {
+	{"push", _push},
 	{"pall", _pall},
 	{"pint", _pint},
 	{"nop", _nop},
 	{NULL, NULL}};
 
-	if (strcmp(parsed[0], "push") == 0)
+	/*if (strcmp(parsed[0], "push") == 0)
 	{
 		_push(stack, line_c, parsed[1]);
 		return (0);
-	}
+	}*/
 
 	for (i = 0; ops[i].opcode && parsed[0] != NULL; i++)
 	{

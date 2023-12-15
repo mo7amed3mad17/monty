@@ -55,7 +55,7 @@ int execute(stack_t **stack, char **parsed, unsigned int line_c, FILE *file);
 char **parse_line(char *line);
 int check_n(char *n);
 void free_s(stack_t *stack);
-void _push(stack_t **stack, unsigned int line_c, void* n);
+void _push(stack_t **stack, unsigned int line_c);
 void _pall(stack_t **stack, unsigned int line_c);
 void _pint(stack_t **stack, unsigned int line_c);
 void _nop(stack_t **stack, unsigned int line_c);
