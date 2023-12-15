@@ -23,9 +23,9 @@ void _push(stack_t **stack, unsigned int line_c, void *n)
 	if (n == NULL || c != 0)
 	{
 		fprintf(stderr, "L%d: usage: push integer\n", line_c);
-		fclose(file);
+		fclose(inf.file);
 		free_s(*stack);
-		free(parsed);
+		free(inf.parsed);
 		exit(EXIT_FAILURE);
 	}
 	val = atoi(n);

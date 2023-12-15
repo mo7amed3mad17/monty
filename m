@@ -7,24 +7,28 @@
 char **parse_line(char *line)
 {
 	int buffsize = 256;
-	int i = 0;
+	/*int i = 0;*/
 	char **parsed = malloc(buffsize * sizeof(char *));
-	char delim [] = {" \n\t\r\a"};
-	char *word = NULL;
+	char delim [] = {" \n\t"};
+	/*char *word = NULL;*/
 
 	if (!parsed)
 	{
 		perror("malloc");
 		exit(EXIT_FAILURE);
 	}
-	word = strtok(line, delim);
+
+	parsed[0] = strtok(line, delim);
+	parsed[1] = strtok(line, delim);
+	/*word = strtok(line, delim);
 	while (word != NULL)
 	{
 		parsed[i] = word;
 		i++;
 		word = strtok(NULL, delim);
 	}
-	parsed[i] = NULL;
-	/*printf("%s %s", parsed[0], parsed[1]);*/
+	*/
+	parsed[2] = NULL;
 	return (parsed);
 }
+

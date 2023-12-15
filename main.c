@@ -1,7 +1,5 @@
 #include "monty.h"
-stack_t *stack = NULL;
-char **parsed = NULL;
-FILE *file;
+info_t inf = {NULL, NULL, NULL};
 /**
   * main - The main Entry of the program
   * @argc: The num of arg
@@ -18,21 +16,21 @@ int main(int argc, char **argv)
 		fprintf(stderr, "USAGE: monty file\n");
 		exit(EXIT_FAILURE);
 	}
-	file = fopen(argv[1], "r");
-	if (!file)
+	inf.file = fopen(argv[1], "r");
+	if (!inf.file)
 	{
 		fprintf(stderr, "Error: Can't open file %s\n", argv[1]);
 		exit(EXIT_FAILURE);
 	}
 
-	while (fgets(line, sizeof(line), file) != NULL)
+	while (fgets(line, sizeof(line), inf.file) != NULL)
 	{
 		line_c++;
-		parsed = parse_line(line);
-		execute(&stack, parsed, line_c, file);
-		free(parsed);
+		inf.parsed = parse_line(line);
+		execute(&inf.stack, inf.parsed, line_c, inf.file);
+		free(inf.parsed);
 	}
-	free_s(stack);
-	fclose(file);
+	free_s(inf.stack);
+	fclose(inf.file);
 	return (0);
 }

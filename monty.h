@@ -42,9 +42,14 @@ typedef struct instruction_s
         void (*f)(stack_t **stack, unsigned int line_number);
 } instruction_t;
 
-extern stack_t *stack;
-extern FILE *file;
-extern char **parsed;
+typedef struct info
+{
+	stack_t *stack;
+	FILE *file;
+	char **parsed;
+} info_t;
+
+extern info_t inf;
 
 int execute(stack_t **stack, char **parsed, unsigned int line_c, FILE *file);
 char **parse_line(char *line);
