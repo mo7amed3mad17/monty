@@ -44,14 +44,13 @@ typedef struct instruction_s
 
 typedef struct info
 {
-	stack_t *stack;
 	FILE *file;
 	char **parsed;
 } info_t;
 
 extern info_t inf;
 
-int execute(stack_t **stack, char **parsed, unsigned int line_c, FILE *file);
+int execute(stack_t **stack, unsigned int line_c);
 char **parse_line(char *line);
 int check_n(char *n);
 void free_s(stack_t *stack);

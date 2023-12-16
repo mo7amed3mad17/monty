@@ -7,7 +7,7 @@
   * @stack: stack
   * Return: int
 */
-int execute(stack_t **stack, char **parsed, unsigned int line_c, FILE *file)
+int execute(stack_t **stack, unsigned int line_c)
 {
 	int i = 0;
 
@@ -24,21 +24,21 @@ int execute(stack_t **stack, char **parsed, unsigned int line_c, FILE *file)
 		return (0);
 	}*/
 
-	for (i = 0; ops[i].opcode && parsed[0] != NULL; i++)
+	for (i = 0; ops[i].opcode && inf.parsed[0] != NULL; i++)
 	{
-		if (strcmp(parsed[0], ops[i].opcode) == 0)
+		if (strcmp(inf.parsed[0], ops[i].opcode) == 0)
 		{
 			ops[i].f(stack, line_c);
 			return (0);
 		}
 	}
 
-	if (parsed[0] && ops[i].opcode == NULL)
+	if (inf.parsed[0] && ops[i].opcode == NULL)
 	{
-		fprintf(stderr, "L%d: unknown instruction %s\n", line_c, parsed[0]);
-		fclose(file);
+		fprintf(stderr, "L%d: unknown instruction %s\n", line_c, inf.parsed[0]);
+		fclose(inf.file);
 		free_s(*stack);
-		free(parsed);
+		free(inf.parsed);
 		exit(EXIT_FAILURE);
 	}
 	return (1);

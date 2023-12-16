@@ -18,9 +18,9 @@ void _pall(stack_t **stack, unsigned int line_c)
 	}
 	while (ptr && ptr->prev != NULL)
 	{
-		printf("%d\n", ptr->n);
+		fprintf(stdout, "%d\n", ptr->n);
 		ptr = ptr->prev;
 	}
-	printf("%d\n", ptr->n);
+	fprintf(stdout , "%d\n", ptr->n);
 	(void) line_c;
 }

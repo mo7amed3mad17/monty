@@ -1,5 +1,5 @@
 #include "monty.h"
-info_t inf = {NULL, NULL, NULL};
+info_t inf = {NULL, NULL};
 /**
   * main - The main Entry of the program
   * @argc: The num of arg
@@ -9,6 +9,7 @@ info_t inf = {NULL, NULL, NULL};
 int main(int argc, char **argv)
 {
 	char line[128];
+	stack_t *stack = NULL;
 	unsigned int line_c = 0;
 
 	if (argc != 2)
@@ -27,10 +28,10 @@ int main(int argc, char **argv)
 	{
 		line_c++;
 		inf.parsed = parse_line(line);
-		execute(&inf.stack, inf.parsed, line_c, inf.file);
+		execute(&stack, line_c);
 		free(inf.parsed);
 	}
-	free_s(inf.stack);
+	free_s(stack);
 	fclose(inf.file);
 	return (0);
 }

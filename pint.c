@@ -19,5 +19,5 @@ void _pint(stack_t **stack, unsigned int line_c)
 	{
 		ptr = ptr->next;
 	}
-	printf("%d\n", ptr->n);
+	fprintf(stdout, "%d\n", ptr->n);
 }
