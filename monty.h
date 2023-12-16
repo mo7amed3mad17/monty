@@ -53,9 +53,9 @@ extern info_t inf;
 int execute(stack_t **stack, unsigned int line_c);
 char **parse_line(char *line);
 int check_n(char *n);
-void free_s(stack_t *stack);
-void _push(stack_t **stack, unsigned int line_c);
-void _pall(stack_t **stack, unsigned int line_c);
-void _pint(stack_t **stack, unsigned int line_c);
-void _nop(stack_t **stack, unsigned int line_c);
+void free_s(stack_t *head);
+void _push(stack_t **head, unsigned int line_c);
+void _pall(stack_t **head, unsigned int line_c);
+void _pint(stack_t **head, unsigned int line_c);
+void _nop(stack_t **head, unsigned int line_c);
 #endif

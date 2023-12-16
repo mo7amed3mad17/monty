@@ -6,7 +6,7 @@
   * @stack: the org stack
   * Return: new stack
  */
-void _push(stack_t **stack, unsigned int line_c)
+void _push(stack_t **head, unsigned int line_c)
 {
 	int val, c;
 	stack_t *ptr;
@@ -22,7 +22,7 @@ void _push(stack_t **stack, unsigned int line_c)
 	{
 		fprintf(stderr, "L%d: usage: push integer\n", line_c);
 		fclose(inf.file);
-		free_s(*stack);
+		free_s(*head);
 		free(inf.parsed);
 		exit(EXIT_FAILURE);
 	}
@@ -30,7 +30,7 @@ void _push(stack_t **stack, unsigned int line_c)
 	(void) line_c;
 	new->n = val;
 	new->next = NULL;
-	ptr = *stack;
+	ptr = *head;
 
 	if (ptr != NULL)
 	{
@@ -43,7 +43,7 @@ void _push(stack_t **stack, unsigned int line_c)
 
 	else
 	{
-		*stack = new;
+		*head = new;
 	}
 	new->prev = ptr;
 }

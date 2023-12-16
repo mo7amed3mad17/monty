@@ -5,11 +5,11 @@
   * @line_c: counter
   * Return: void
  */
-void _pint(stack_t **stack, unsigned int line_c)
+void _pint(stack_t **head, unsigned int line_c)
 {
-	stack_t *ptr = *stack;
+	stack_t *ptr = *head;
 
-	if (*stack == NULL)
+	if (*head == NULL)
 	{
 		fprintf(stderr, "L%d: can't pint, stack empty", line_c);
 		exit(EXIT_FAILURE);

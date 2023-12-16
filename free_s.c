@@ -4,14 +4,14 @@
   * @stack: stack
   * Return: void
  */
-void free_s(stack_t *stack)
+void free_s(stack_t *head)
 {
-	stack_t *ptr = stack;
+	stack_t *ptr = head;
 
-	while (stack)
+	while (head)
 	{
-		ptr = stack->next;
-		free(stack);
-		stack = ptr;
+		ptr = head->next;
+		free(head);
+		head = ptr;
 	}
 }

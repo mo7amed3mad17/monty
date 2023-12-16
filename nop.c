@@ -5,8 +5,8 @@
   * @line_c: counter
   * Return: void
  */
-void _nop(stack_t **stack, unsigned int line_c)
+void _nop(stack_t **head, unsigned int line_c)
 {
-	(void) stack;
+	(void) head;
 	(void) line_c;
 }
