@@ -5,9 +5,9 @@
   * @line_c: counter
   * Return: void
  */
-void _pint(stack_t **head, unsigned int line_c)
+void _pint(stack_1 **head, unsigned int line_c)
 {
-	stack_t *ptr = *head;
+	stack_1 *ptr = *head;
 
 	if (*head == NULL)
 	{

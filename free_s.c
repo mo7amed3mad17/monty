@@ -4,9 +4,9 @@
   * @stack: stack
   * Return: void
  */
-void free_s(stack_t *head)
+void free_s(stack_1 *head)
 {
-	stack_t *ptr = head;
+	stack_1 *ptr = head;
 
 	while (head)
 	{

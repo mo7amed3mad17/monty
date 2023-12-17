@@ -6,13 +6,13 @@
   * @stack: the org stack
   * Return: new stack
  */
-void _push(stack_t **head, unsigned int line_c)
+void _push(stack_1 **head, unsigned int line_c)
 {
 	int val, c;
-	stack_t *ptr;
-	stack_t *new;
+	stack_1 *ptr;
+	stack_1 *new;
 
-	new = malloc(sizeof(stack_t));
+	new = malloc(sizeof(stack_1));
 
 	if (new == NULL)
 	return;

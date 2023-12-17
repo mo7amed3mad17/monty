@@ -9,7 +9,7 @@ info_t inf = {NULL, NULL};
 int main(int argc, char **argv)
 {
 	char line[128];
-	stack_t *stack_1 = NULL;
+	stack_1 *stack = NULL;
 	unsigned int line_c = 0;
 
 	if (argc != 2)
@@ -28,10 +28,10 @@ int main(int argc, char **argv)
 	{
 		line_c++;
 		inf.parsed = parse_line(line);
-		execute(&stack_1, line_c);
+		execute(&stack, line_c);
 		free(inf.parsed);
 	}
-	free_s(stack_1);
+	free_s(stack);
 	fclose(inf.file);
 	return (0);
 }

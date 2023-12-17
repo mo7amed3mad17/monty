@@ -5,9 +5,9 @@
   * @line_c: counter
   * Return: void
  */
-void _pall(stack_t **head, unsigned int line_c)
+void _pall(stack_1 **head, unsigned int line_c)
 {
-	stack_t *ptr = *head;
+	stack_1 *ptr = *head;
 
 	if (ptr == NULL)
 	return;

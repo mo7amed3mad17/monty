@@ -7,7 +7,7 @@
   * @stack: stack
   * Return: int
 */
-int execute(stack_t **stack, unsigned int line_c)
+int execute(stack_1 **stack, unsigned int line_c)
 {
 	int i = 0;
 
